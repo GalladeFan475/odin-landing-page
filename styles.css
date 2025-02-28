@@ -91,6 +91,7 @@ body{
 
 .info{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 30px;
     padding-top: 30px;
@@ -108,7 +109,8 @@ body{
 .info-img{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     margin-left: 250px;
     margin-right: 250px;
@@ -117,9 +119,13 @@ body{
 .image{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 250px;
     width: 200px;
     gap: 5px;
+    flex-grow: 1;
+    flex-basis: 200;
 }
 
 .image img{
@@ -128,6 +134,7 @@ body{
     border: solid;
     border-color: #3882f6;
     border-radius: 5px;
+    text-align: center;
 }
 
 .image .leader-text{
